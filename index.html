@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse King | Fine Art & Illustration</title>
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --text-color: #f0f0f0;
+            --accent-color: #ff003c; /* Punk red */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 6rem 2rem 4rem;
+            text-align: left;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin: 0;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .bio-section {
+            max-width: 900px;
+            margin: 0 0 5rem 0;
+            text-align: left;
+            border-left: 8px solid var(--accent-color);
+            padding-left: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .bio-section h2 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .gallery {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+
+        @media (max-width: 1000px) { .gallery { column-count: 2; } }
+        @media (max-width: 600px) { .gallery { column-count: 1; } }
+
+        .gallery-item {
+            margin-bottom: 2rem;
+            break-inside: avoid;
+            position: relative;
+            background: #000;
+            border: 2px solid #222;
+            transition: all 0.15s ease-in-out;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translate(-6px, -6px);
+            box-shadow: 10px 10px 0px var(--accent-color);
+            border-color: var(--accent-color);
+            z-index: 10;
+        }
+
+        .gallery-item:hover img {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay {
+            padding: 1rem;
+            background: #000;
+            border-top: 1px solid #222;
+        }
+        
+        .gallery-item h3 {
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .contact-section {
+            margin-top: 6rem;
+            padding: 4rem 2rem;
+            background: #151515;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .contact-section p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0;
+        }
+
+        .contact-section a {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #000;
+            background: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        .contact-section a:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jesse King</h1>
+        <div class="subtitle">Raw Illustration • Printmaking • Original Oils</div>
+    </header>
+
+    <div class="container">
+        <div class="bio-section">
+            <h2>About the Artist</h2>
+            <p>Jesse King makes art out of necessity. Based in New England, his work is heavily influenced by years spent in the punk and skate scenes—places where being rough around the edges isn't just accepted, it's the point.</p>
+            <p>His drawings and oil paintings are fast, aggressive, and honest. He isn't interested in making things look pretty or polished. Instead, his work channels the harsh reality of living in a state of disillusionment—shedding light on the shambles of intoxicating and destructive love, the chaos and instability of a life on the edge, and the wrath of a party that never ended.</p>
+            <p>Returning to his art full-time, King aims to express his internal experience. He paints and draws because he has to get it out—his art gives a way for his turbulent existence to scream to the world. He is currently working out of his studio, doing board graphics, taking commissions, and selling original pieces.</p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item"><img src="images/IMG_4518.PNG" alt="Artwork"><div class="overlay"><h3>Dissociation</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4520.PNG" alt="Artwork"><div class="overlay"><h3>White Noise</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4517.PNG" alt="Artwork"><div class="overlay"><h3>The Party That Never Ended</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4535.PNG" alt="Artwork"><div class="overlay"><h3>Irresistible Toxicity</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4528.PNG" alt="Artwork"><div class="overlay"><h3>Tension</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4539.PNG" alt="Artwork"><div class="overlay"><h3>Omen</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4538.PNG" alt="Artwork"><div class="overlay"><h3>Romeo & Juliet</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4541.PNG" alt="Artwork"><div class="overlay"><h3>Exposed</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4542.PNG" alt="Artwork"><div class="overlay"><h3>Suburban Decay</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4545.PNG" alt="Artwork"><div class="overlay"><h3>Identity Crisis</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4547.PNG" alt="Artwork"><div class="overlay"><h3>Disillusionment</h3></div></div>
+            <div class="gallery-item"><img src="images/IMG_4548.PNG" alt="Artwork"><div class="overlay"><h3>Self Portrait</h3></div></div>
+        </div>
+
+        <div class="contact-section">
+            <p>Available for commissions, album art, deck graphics, and original canvas purchases.</p>
+            <br>
+            <a href="mailto:joeygiconte@gmail.com">Contact Jesse</a>
+        </div>
+    </div>
+
+</body>
+</html>
